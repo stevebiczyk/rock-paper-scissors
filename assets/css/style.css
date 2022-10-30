@@ -1,0 +1,27 @@
+/* --------- Global style */
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: blue;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/*--Header and Footer--*/
+
+header{
+    text-align: center;
+    height: 50px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    min-height: 50px;
+    text-align: center;
+}
