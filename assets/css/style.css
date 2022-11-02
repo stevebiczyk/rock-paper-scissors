@@ -25,3 +25,9 @@ footer {
     min-height: 50px;
     text-align: center;
 }
+
+.game-area {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}

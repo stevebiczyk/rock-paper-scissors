@@ -7,7 +7,6 @@
     <!--Font Awesome and Google Fonts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock Paper Scissors</title>
 </head>
@@ -15,13 +14,32 @@
     <h1 class = "heading">
         <img class="logo" src="assets/images/scissors.png" alt="logo">Rock Paper Scissors
         </h1>
-<section class="game-section">
-    <div class="selection-area">
-    <button></button>
-    <button></button>
-    <button></button>
-    </div>
-</section>
+        <section class="game-section">
+            <div class="selection-area">
+            <div class="selection" data-choice = "rock" id = "rock">
+            <img src = "assets/images/icons8-rock-hand.png" alt="Rock Hand">
+            </div>
+            <div class="selection" data-choice = "paper" id = "paper">
+                <img src="assets/images/icons8-paper -hand.png" alt="Paper Hand">
+            </div>
+        
+            <div class="selection" data-choice = "scissors" id = "scissors">
+                <img src="assets/images/icons8-hand-scissors.png" alt="Scissors Hand">
+            </div>
+            <div id="player-prompt">
+                <p>Click on one of the icons above!</p>
+            </div>
+        </div>
+            </div>
+            <div id="result-message">
+               <p> Result Message</p>
+            </div>
+        
+            <div class = "score-area">
+            <p class="scores">Player Score<span id = "player-score">0</span></p>
+            <p class="scores">Computer Score<span id="computer-score">0</span></p>
+            </div>
+        </section>
 <script src="assets/js/script.js"></script>    
 </body>
 </html>
