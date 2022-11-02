@@ -1,4 +1,10 @@
-/* --------- Global style */
+* --------- Global style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html {
     min-height: 100%;
@@ -6,28 +12,99 @@ html {
 }
 
 body {
-    background-color: blue;
+    background-color: lightblue;
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    margin: 0;
 }
 
 /*--Header and Footer--*/
 
-header{
+header {
     text-align: center;
     height: 50px;
+    font-size: 1.5rem;
+    color: #445361;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
+
 
 footer {
     position: absolute;
     width: 100%;
     min-height: 50px;
     text-align: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+    color: #fff;
 }
 
-.game-area {
+.game-section {
     width: 80%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
     text-align: center;
+    background-color: lightgreen;
+}
+
+#player-prompt {
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+#player-prompt > p {
+    font-weight: bold;
+    padding: 15px 20px;
+    margin: 2;
+}
+
+.selection-area {
+    margin: 40px;
+}
+
+.selection {
+    display: inline-block;
+    border: 5px solid darkblue;
+    background-color: aquamarine;
+    margin: 40px;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+.selection:hover {
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.15);
+}   
+
+#result-message {
+    font-size: 20px;
+}
+
+#result-message > p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+.scores {
+    display: inline-block;
+    padding: 25px;
+}
+
+#player-score {
+    color: green;
+    font-weight: bold;
+}
+
+#computer-score {
+    color: red;
+    font-weight: bold;
 }
