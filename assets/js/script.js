@@ -9,6 +9,22 @@ const choices = ["rock", "paper", "scissors"]
 /**
  * Add event listeners to the buttons.
  */
+function playerChoice() {
+
+}
+
+function computerChoice() {
+
+}
+
+function playGame() {
+
+}
+
+function decideWinner () {
+
+}
+
 function incrementPlayerScore() {
 
 }
