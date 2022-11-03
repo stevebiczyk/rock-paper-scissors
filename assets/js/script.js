@@ -30,12 +30,40 @@
  }
  
  function decideWinner () {
- 
+    if (playerSelection === computerChoice) {
+       resultMessage.textContent = 'Both chose the same, its a draw'
+    }else if (playerSelection === 'rock' && computerChoice === "paper") {
+          resultMessage.textContent = 'The player lost!'
+          incrementComputerScore();
+    } else if (playerSelection === 'rock' && computerChoice === "scissors") {
+          resultMessage.textContent = 'The player won!'
+          incrementPlayerScore();
+        } else if (playerSelection === 'paper' && computerChoice === "scissors") {
+             resultMessage.textContent = 'The player lost!'
+             incrementComputerScore();
+        } else if (playerSelection === 'paper' && computerChoice === "rock") {
+                resultMessage.textContent = 'The player won!'
+                incrementPlayerScore();
+        } else if (playerSelection === 'scissors' && computerChoice === "rock") {
+                   resultMessage.textContent = 'The player lost!'
+                   incrementComputerScore();
+         } else if (playerSelection === 'scissors' && computerChoice === "paper") {
+                      resultMessage.textContent = 'The player won!'
+                      incrementPlayerScore();
+    } else {
+       resultMessage.textContent = 'The player won!'
+       incrementPlayerScore();
+    }
  }
  
  function incrementPlayerScore() {
  
+    let oldScore = parseInt(document.getElementById("player-score").innerText);
+    document.getElementById("player-score").innerText = ++oldScore;
  }
+ 
  function incrementComputerScore() {
-     
+ 
+    let oldScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++oldScore;
  }
