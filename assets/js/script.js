@@ -96,3 +96,8 @@ function incrementComputerScore() {
    cScore = parseInt(document.getElementById("computer-score").innerText);
    document.getElementById("computer-score").innerText = ++cScore;
 }
+function restartGame(event) {
+   window.location.reload();
+}
+ let restartBtn = document.getElementById("btn-restart");
+ restartBtn.addEventListener('click', restartGame);
