@@ -4,41 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Font Awesome and Google Fonts-->
+    <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1 class = "heading">
-        <img class="logo" src="assets/images/scissors.png" alt="logo">Rock Paper Scissors
-        </h1>
-        <section class="game-section">
-            <div class="selection-area">
-            <div class="selection" data-selection = "rock" id = "rock">
-            <img src = "assets/images/icons8-rock-hand.png" alt="Rock Hand">
-            </div>
-            <div class="selection" data-selection = "paper" id = "paper">
-                <img src="assets/images/icons8-paper -hand.png" alt="Paper Hand">
-            </div>
-        
-            <div class="selection" data-selection = "scissors" id = "scissors">
-                <img src="assets/images/icons8-hand-scissors.png" alt="Scissors Hand">
-            </div>
-            <div id="player-prompt">
-                <p>Click on one of the icons above!</p>
-            </div>
+    <header>
+      <h1 class = "heading">Rock Paper Scissors
+      </h1>
+    </header>
+<section class="game-section">
+    <div class="selection-area">
+    <div class="selection" data-selection = "rock" id = "rock">
+    <img src = "assets/images/icons8-rock-hand.png" alt="Rock Hand">
+    </div>
+    <div class="selection" data-selection = "paper" id = "paper">
+        <img src="assets/images/icons8-paper -hand.png" alt="Paper Hand">
+    </div>
+
+    <div class="selection" data-selection = "scissors" id = "scissors">
+        <img src="assets/images/icons8-hand-scissors.png" alt="Scissors Hand">
+    </div>
+    <div id="player-prompt">
+        <p>Click on one of the icons above!</p>
+    </div>
+</div>
+    </div>
+    
+    <div class = "choice-area">
+        <p class="choices">The player chose <span id = "player-selection"> </span></p>
+        <p class="choices">The computer chose <span id="computer-choice"> </span></p>
         </div>
-            </div>
-            <div id="result-message">
-               <p> Result Message</p>
-            </div>
-        
-            <div class = "score-area">
-            <p class="scores">Player Score<span id = "player-score">0</span></p>
-            <p class="scores">Computer Score<span id="computer-score">0</span></p>
-            </div>
-        </section>
+
+</section>
 <script src="assets/js/script.js"></script>    
 </body>
 </html>

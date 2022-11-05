@@ -1,10 +1,14 @@
 /**
- * Declare constants for DOM elements and possible choices.
+ * Declare constants for DOM elements.
  */
 
+ const playerSelection = document.getElementById("player-selection");
+ const computerChoice = document.getElementById("computer-choice");
  const playerScore = document.getElementById("player-score");
  const computerScore = document.getElementById("computer-score");
- const choices = ["rock", "paper", "scissors"]
+ const resultMessage = document.getElementById("result-message");
+ /* var roundsLeft = parseInt(document.getElementById("rounds-left").innerText);
+ const restartGame = document.getElementById("restart");*/
  
  /**
   * Add event listeners and get player selection.
@@ -13,57 +17,82 @@
      for (let selection of selections) {
          selection.addEventListener("click", function() {
  let playerSelection = this.getAttribute("data-selection");
- playGame(playerSelection);
+playGame(playerSelection);
          });
      }
     
  function generateComputerChoice() {
- /* const choices = ["rock", "paper", "scissors"] */
+   const choices = ["rock", "paper", "scissors"] 
     let randomSelection = Math.floor(Math.random() * choices.length);
     return choices[randomSelection];
  }
  
  function playGame(playerSelection) {
     const computerChoice = generateComputerChoice();
-    console.log(`Player chose ${playerSelection}`);
-    console.log(`Computer chose ${computerChoice}`);
+    decideWinner(playerSelection, computerChoice);
+    roundCount();
+    gameFinished(roundsLeft,0);
  }
+
+/**
+ * Compares the player and  computer selection and declares the winner.
+ * Also increments the score for the wiiner.
+ */
  
- function decideWinner () {
-    if (playerSelection === computerChoice) {
-       resultMessage.textContent = 'Both chose the same, its a draw'
-    }else if (playerSelection === 'rock' && computerChoice === "paper") {
-          resultMessage.textContent = 'The player lost!'
-          incrementComputerScore();
-    } else if (playerSelection === 'rock' && computerChoice === "scissors") {
-          resultMessage.textContent = 'The player won!'
-          incrementPlayerScore();
-        } else if (playerSelection === 'paper' && computerChoice === "scissors") {
-             resultMessage.textContent = 'The player lost!'
-             incrementComputerScore();
-        } else if (playerSelection === 'paper' && computerChoice === "rock") {
-                resultMessage.textContent = 'The player won!'
-                incrementPlayerScore();
-        } else if (playerSelection === 'scissors' && computerChoice === "rock") {
-                   resultMessage.textContent = 'The player lost!'
-                   incrementComputerScore();
-         } else if (playerSelection === 'scissors' && computerChoice === "paper") {
-                      resultMessage.textContent = 'The player won!'
-                      incrementPlayerScore();
-    } else {
-       resultMessage.textContent = 'The player won!'
-       incrementPlayerScore();
-    }
- }
- 
- function incrementPlayerScore() {
- 
-    let oldScore = parseInt(document.getElementById("player-score").innerText);
-    document.getElementById("player-score").innerText = ++oldScore;
- }
- 
- function incrementComputerScore() {
- 
-    let oldScore = parseInt(document.getElementById("computer-score").innerText);
-    document.getElementById("computer-score").innerText = ++oldScore;
- }
+ function decideWinner (playerSelection, computerChoice) {
+   document.getElementById("player-selection").innerText = playerSelection;
+   document.getElementById("computer-choice").innerText = computerChoice;
+   if (playerSelection === computerChoice) {
+      resultMessage.textContent = "Both players chose the same, it's a draw!";   
+          }
+         else if (playerSelection === 'rock') {
+              if (computerChoice === 'paper') {
+                  resultMessage.textContent = "Paper beats rock, the computer won!";
+                  incrementComputerScore();
+   
+              }else {
+                  resultMessage.textContent = "Rock beats scissors, you beat the computer!"
+                  incrementPlayerScore(playerScore);
+              }
+          }
+
+          else if (playerSelection === 'scissors') {
+              if (computerChoice === 'rock') {
+                  resultMessage.textContent = "Rock beats scissors, the computer won!";
+                  incrementComputerScore();
+              }else {
+                  resultMessage.textContent = "Scissors beats paper, you beat the computer!";
+                  incrementPlayerScore();
+              }
+          }
+
+          else if (playerSelection === 'paper') {
+              if (computerChoice === 'scissors') {
+                  resultMessage.textContent = "Scissors beats paper, the computer won!";
+                  incrementComputerScore();
+              }else {
+                  resultMessage.textContent = "Paper beats rock, you beat the computer!";
+                  incrementPlayerScore();
+              }
+          }
+         }
+         
+/**
+ * Gets the current player score from the DOM and increments it by 1 if the player wins
+ */
+
+function incrementPlayerScore() {
+
+   pScore = parseInt(document.getElementById("player-score").innerText);
+   document.getElementById("player-score").innerText = ++pScore;
+}
+
+/**
+ * Gets the current computer score from the DOM and increments it by 1 if the computer wins
+ */
+
+function incrementComputerScore() {
+
+   cScore = parseInt(document.getElementById("computer-score").innerText);
+   document.getElementById("computer-score").innerText = ++cScore;
+}

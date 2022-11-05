@@ -1,4 +1,4 @@
-* --------- Global style */
+/* --------- Global style */
 
 * {
     margin: 0;
@@ -41,6 +41,7 @@ footer {
 
 .game-section {
     width: 80%;
+    min-height: 600px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
@@ -66,6 +67,7 @@ footer {
 .selection {
     display: inline-block;
     border: 5px solid darkblue;
+    border-radius: 20px;
     background-color: aquamarine;
     margin: 40px;
     padding: 10px;
@@ -80,7 +82,7 @@ footer {
 }   
 
 #result-message {
-    font-size: 20px;
+    font-size: 1.6rem;
 }
 
 #result-message > p {
@@ -97,6 +99,7 @@ footer {
 .scores {
     display: inline-block;
     padding: 25px;
+    font-size: 1.2rem;
 }
 
 #player-score {
