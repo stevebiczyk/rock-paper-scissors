@@ -40,6 +40,8 @@ playGame(playerSelection);
  */
  
  function decideWinner (playerSelection, computerChoice) {
+   /* console.log(`Player chose ${playerSelection}`);
+   console.log(`Computer chose ${computerChoice}`); */
    document.getElementById("player-selection").innerText = playerSelection;
    document.getElementById("computer-choice").innerText = computerChoice;
    if (playerSelection === computerChoice) {
@@ -76,7 +78,14 @@ playGame(playerSelection);
               }
           }
          }
-         
+         /* function playGame(playerSelection) {
+            const computerChoice = generateComputerChoice();
+            console.log(`Player chose ${playerSelection}`);
+            console.log(`Computer chose ${computerChoice}`); 
+            decideWinner();
+         }   */
+
+
 /**
  * Gets the current player score from the DOM and increments it by 1 if the player wins
  */
@@ -96,6 +105,27 @@ function incrementComputerScore() {
    cScore = parseInt(document.getElementById("computer-score").innerText);
    document.getElementById("computer-score").innerText = ++cScore;
 }
+
+function  roundCount() {
+let roundsLeft = parseInt(document.getElementById("rounds-left").innerText); 
+document.getElementById("rounds-left").innerText = --roundsLeft;
+}
+
+function gameFinished(roundsLeft) {
+if (roundsLeft === 0 && playerScore == computerScore) {
+   resultMessage.textContent = 'Your scores are the same, the game is a draw.'
+}else if (roundsLeft === 0 && playerScore > computerScore) {
+      resultMessage.textContent = 'The players score is higher, the player wins!'
+} else { (roundsLeft === 0 && playerScore > computerScore)
+   resultMessage.textContent = 'The computers score is higher, the player lost!';
+}
+roundsLeft.style.display = 'none';  
+}
+
+/**
+ * Gives the option to restart the game after a certain number of rounds played.
+ */
+
 function restartGame(event) {
    window.location.reload();
 }
