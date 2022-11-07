@@ -38,7 +38,7 @@
  
  /**
   * Compares the player and  computer selection and declares the winner.
-  * Also increments the score for the wiiner.
+  * Also increments the score for the winner.
   */
  
  function decideWinner(playerSelection, computerChoice) {
@@ -97,8 +97,8 @@
    document.getElementById("rounds-left").innerText = --roundsLeft;
  }
  /**
-  * check if game is finished, compare final scores and display the appropriate message.
-  *  @param {number} roundsLeft 
+  * Check if game is finished, compare final scores and display the appropriate message.
+  * 
   */
  function gameFinished(roundsLeft) {
    roundsLeft = parseInt(document.getElementById("rounds-left").innerText);/*
@@ -111,17 +111,17 @@
     /* console.log(selections); 
     for (let selection of selections) {
        selection.removeEventListener("click", playGame());
-     } 
+     } */
      const icons = document.querySelectorAll('.selection');
  icons.forEach(function (icon) {
-       icon.removeEventListener('click',onclick);
-    }); */
+       icon.style.pointerEvents = "none";
+    }); 
      if (pScore > cScore) {
        resultMessage.textContent =
-         "The players score is higher, the player wins!";
+         "The player's score is higher, the player wins!";
      } else if (pScore < cScore) {
        resultMessage.textContent =
-         "The computers score is higher, the computer wins!";
+         "The computer's score is higher, the computer wins!";
      } else {
        resultMessage.textContent =
          "Your scores are the same, the game is a draw.";

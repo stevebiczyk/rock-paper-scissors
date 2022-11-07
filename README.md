@@ -1,108 +1,112 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors
 
-Welcome stevebiczyk,
+The web based game was created 
+ 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+- The website consists of a single page. 
+### Existing Features
 
-## Gitpod Reminders
+- __Main Game area__
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+  - 
+  - 
 
-`python3 -m http.server`
+- __The Homepage main image__
+ 
+  - The landing page includes a photograph with caption to show the visitor the spectacular wievs of Budapest.
+  - This will grab their attention and provide an eye catching imtroduction to the content.
 
-A blue button should appear to click: _Make Public_,
+![Homepage Image](https://github.com/stevebiczyk/visit-budapest/blob/main/media/homepage-top.jpg)
 
-Another blue button should appear to click: _Open Browser_.
+- __Introduction Section__
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  - A short introduction containing relevant and interesting information about the city of Budapest. 
 
-A blue button should appear to click: _Make Public_,
+- __Places to see section__
 
-Another blue button should appear to click: _Open Browser_.
+  - This section introduces the visitor to a handful of recommenced sights of Budapest.
+  - The images contain clickable links that direct the visitor to the relevant page and section.
+  - The layout of the site allows for changing the current selection or adding more sights a later date.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- __Things to do Section__
 
-To log into the Heroku toolbelt CLI:
+  - The section contains a few images of the recommended activities. The images contain clickable links that direct the visitor to the relevan page and section.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  __Where to stay Section__
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  - The section shows the visitor eye catching images of a small selection of hotels. Again the images are also clickable links taking the user to the relevant page and section.
 
-------
+![Homepage Content](https://github.com/stevebiczyk/visit-budapest/blob/main/media/visitbudapest-home-content.jpg)
 
-## Release History
+  __Budapest on video__
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  - This section contains a Youtube video showing various sights of Budapest. More videos can be added later.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- __The Footer__ 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+  - The footer section includes links to the official social media sites for Visit Budapest. Due to the lack of Youtube account that link will take the user to the Youtube homepage. The links will open to a new tab to allow easy navigation for the user. 
+  - These sites contain more up to date information regarding places, activities and events in Budapest.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![Footer](https://github.com/stevebiczyk/visit-budapest/blob/main/media/footer.jpg)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- __Places to see page__
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  - This page contains a short prologue followed by text and images showing and describing 3 selected places to visit in Budapest.
+  - The design of the page allows for easy addition of content in the future. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![Places to see page](https://github.com/stevebiczyk/visit-budapest/blob/main/media/places-to-see.jpg)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- __Things to do page__
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+  - This page contains a short prologue followed by text and images showing and describing 3 selected activities to try in Budapest.
+  - The design of the page allows for easy addition of content in the future. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![Things to do](https://github.com/stevebiczyk/visit-budapest/blob/main/media/things-to-do.jpg)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- __Where to stay page__
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+  - This page contains a short prologue followed by text and images showing and describing 3 recommended hotels in Budapest.
+  - The text contains a brief introduction of each hotel and its facilities as well as mentioning other nearby tourist attractions.
+  - The design of the page allows for easy addition of content in the future. 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Where to stay](https://github.com/stevebiczyk/visit-budapest/blob/main/media/where-to-stay.jpg)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- __The Getting Around Page__
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+  - This page will encourage the user to use public transport to get to the various locations described on the previous pages. 
+  - Various modes of transport are mentioned with a snippet of useful information for each.
 
-------
+![Getting around](https://github.com/stevebiczyk/visit-budapest/blob/main/media/getting-around.jpg)
 
-## FAQ about the uptime script
+- __The Newsletter Page__
 
-**Why have you added this script?**
+- This page contains a form that allows the user to sign up to receive a personalised newsletter providing further information.
+- As well as name and email address input boxes, a selection of checkboxes help the user to provide information about their interests.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![Newsletter](https://github.com/stevebiczyk/visit-budapest/blob/main/media/newsletter-form.jpg)
 
-**How will this affect me?**
+### Features Left to Implement
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- All of the pages allow for adding further information. On each page a map or links to a map could be added to help the user locate the places shown and plan ahead.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Testing 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+All links tested and found to be working correctly.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+All html and css files were checked for correct indentation and the text was checked for typos numerous times, both in the source code and on the finished webpage.
 
-**Can I opt out?**
+The website was opened both in Google Chrome and Microsoft Edge browsers and all pages displayed correctly.
+The responsiveness of all of the pages were checked on desktop, simulated tablet and mobile devices.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Tablet View](https://github.com/stevebiczyk/visit-budapest/blob/main/media/homepage-tablet.jpg)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![Mobile View](https://github.com/stevebiczyk/visit-budapest/blob/main/media/homepage-mobile3.jpg)
 
-**Anything more?**
+![Mobile View](https://github.com/stevebiczyk/visit-budapest/blob/main/media/homepage-mobile4.jpg)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+The performance of all pages was also checked in Lighthouse and the scores were very good.
 
----
-
-Happy coding!
+![Lighthouse Scores](https://github.com/stevebiczyk/visit-budapest/blob/main/media/lighthouse-report-homepage.jpg)
