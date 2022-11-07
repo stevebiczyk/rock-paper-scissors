@@ -1,4 +1,4 @@
-/* --------- Global style */
+/* -- Global style -- */
 
 * {
     margin: 0;
@@ -23,6 +23,7 @@ header {
     text-align: center;
     height: 50px;
     font-size: 1.5rem;
+    font-weight: bold;
     color: #445361;
     padding-top: 10px;
     padding-bottom: 40px;
@@ -39,9 +40,11 @@ footer {
     color: #fff;
 }
 
+/* The main game area */
+
 .game-section {
     width: 80%;
-    min-height: 600px;
+    min-height: 650px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
@@ -51,7 +54,7 @@ footer {
 
 #player-prompt {
     margin: 20px auto;
-    font-size: 20px;
+    font-size: 1.6rem;
 }
 
 #player-prompt > p {
@@ -60,7 +63,9 @@ footer {
     margin: 2;
 }
 
-.selection-area {
+/* Player selection area */
+
+#selection-area {
     margin: 40px;
 }
 
@@ -79,7 +84,21 @@ footer {
     color: white;
     cursor: pointer;
     transform: scale(1.15);
-}   
+}
+
+/* Displays the computer and player selection */
+#choice-area {
+    display: none;
+}
+
+.choices {
+    display: inline-block;
+    margin: 5px auto;
+    padding: 25px;
+    font-size: 1.2rem;
+}
+
+/* Results of rounds and game */
 
 #result-message {
     font-size: 1.6rem;
@@ -89,6 +108,8 @@ footer {
     text-align: center;
     font-weight: bold;
 }
+
+/* Player and computer score */
 
 .score-area {
     margin: 5px auto;
@@ -111,12 +132,16 @@ footer {
     color: red;
     font-weight: bold;
 }
+
+/* Game restart button */
+
 #btn-restart {
-    /*display: none;*/
+    display: none;
     width: 150px;
     height: 30px;
     cursor: pointer;
-    letter-spacing: 1.2px;
+    font-weight: bold;
+    letter-spacing: 1.2px; 
     color: white;
     margin-top: 25px;
     background-color: #445361;
