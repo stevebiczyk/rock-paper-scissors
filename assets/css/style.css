@@ -55,7 +55,7 @@ footer {
     font-size: 1.6rem;
 }
 
-#player-prompt > p {
+#player-prompt>p {
     font-weight: bold;
     padding: 15px 20px;
     margin: 20px;
@@ -102,7 +102,7 @@ footer {
     font-size: 1.6rem;
 }
 
-#result-message > p {
+#result-message>p {
     text-align: center;
     font-weight: bold;
 }
@@ -139,7 +139,7 @@ footer {
     height: 30px;
     cursor: pointer;
     font-weight: bold;
-    letter-spacing: 1.2px; 
+    letter-spacing: 1.2px;
     color: white;
     margin-top: 25px;
     background-color: #445361;

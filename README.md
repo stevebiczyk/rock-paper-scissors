@@ -25,6 +25,8 @@ __Main Game area__
  
  - Upon completing the 10th round the final scores are compared and the winner is declared. The click function of the selection icons is deactivated and the restart button is displayed. The player prompt also changes, instructing the player to start a new game by clicking the restart button.
 
+
+
   ![Main Game Area Image 1](https://github.com/stevebiczyk/rock-paper-scissors/blob/main/media/rps-main.jpg)
   ![Main Game Area Image 2](https://github.com/stevebiczyk/rock-paper-scissors/blob/main/media/rps-main-2.jpg)
   ![Main Game Area Image 3](https://github.com/stevebiczyk/rock-paper-scissors/blob/main/media/rps-main-3.jpg)
@@ -33,15 +35,35 @@ __Main Game area__
 
   - The footer section contains the copyright disclaimer.
 
+  ## Accesibility
+
+  - Alt labels were added to the images to help with accessibility issues.
 
 ### Features Left to Implement
 
 - Rock, Paper, Scissors is a game of chance, however the individual players might want to track their scores and possibly compete with one another.
 A score tracking and leaderboard section could be added to achieve these goals.
 
+## Technologies used
+
+### Languages used
+
+- HTML
+- CSS
+- JavaScript
+
+### Frameworks, Libraries & Programs Used
+
+- [Gitpod](https://www.gitpod.io/) for writing down the code and creating the website.
+- [Github](https://github.com/) to save and store the progress and files used on the website.
+- [Google Fonts](https://fonts.google.com/) to import the fonts used on the website.
+- [W3C Validator](https://validator.w3.org/) to validate HTML.
+- [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/) to validate CSS.
+- [JSHint](https://jshint.com/) to validate the JavaScript code.
+
 ## Testing 
 
-- The HTML, CSS and JavaScript files were checked for correct indentation and the text was checked for typos numerous times, both in the source code and on the finished webpage, including the Readme file. The website was opened both in Google Chrome and Microsoft Edge browsers and all features displayed correctly. The responsiveness of the page was checked on desktop, simulated tablet and mobile devices. Several hundred rounds of the game were played to test every possible outcome miltiple times.
+- The HTML, CSS and JavaScript files were checked for correct indentation and validated. The text was checked for typos numerous times, both in the source code and on the finished webpage, including the Readme file. The website was opened both in Google Chrome and Microsoft Edge browsers and all features displayed correctly. The responsiveness of the page was checked on desktop, simulated tablet and mobile devices. Several hundred rounds of the game were played to test every possible outcome multiple times.
 
 __Validator Testing__
 
@@ -78,17 +100,24 @@ The live link can be found here - https://stevebiczyk.github.io/rock-paper-sciss
 
 __Content__
 
-- The general idea for the layout and JavaScript code came from this tutorial:
-https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
+- Some of the ideas for the layout and structure came from this tutorial: https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
 
-- Some ideas for the visuals and layout came from this YouTube video:
-https://www.youtube.com/watch?v=jaVNP3nIAv0
+- The styling and the code structure was also influenced by the Love Maths walkthrough project.
+
+- The idea of clickable images instead of buttons came from this YouTube video: https://www.youtube.com/watch?v=jaVNP3nIAv0
 
 - Tutor help was sought to find a way to disable the even listeners for the selection icons at the end of the 10th round.
 
-- The description of the gameplay is based on the game's Wikipedia article:
-https://en.wikipedia.org/wiki/Rock_paper_scissors
+- The description of the gameplay is based on the game's Wikipedia article: https://en.wikipedia.org/wiki/Rock_paper_scissors
+
+- The resources contained in the course material, on [W3Schools](https://www.w3schools.com/) and on [Stack Overflow](https://stackoverflow.com/) were used to better understand the basic concepts requred to write the code. No code was directly taken from any of these websites.
 
 __Images__
 
-- The logo and the three images used for the selection icons are from https://icons8.com/
+- The three images used for the selection icons are from https://icons8.com/
+
+## Acknowledgements
+
+- I would also like to thank my mentor, Dick Vlaanderen for his helpful and valuable input and ideas.
+
+- I would also like to thank the tutors and my fellow students who helped and answered my questions.
