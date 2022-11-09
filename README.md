@@ -43,6 +43,7 @@ __Main Game Area__
 
 - Rock, Paper, Scissors is a game of chance, however the individual players might want to track their scores and possibly compete with one another.
 A score tracking and leader board section could be added to achieve these goals.
+- The player could be asked to input their name before starting the game and their name could be displayed as the player.
 
 ## Technologies Used
 
