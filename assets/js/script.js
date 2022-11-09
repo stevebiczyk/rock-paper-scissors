@@ -7,8 +7,6 @@
  var pScore = document.getElementById("player-score");
  var cScore = document.getElementById("computer-score");
  const resultMessage = document.getElementById("result-message");
- /* var roundsLeft = parseInt(document.getElementById("rounds-left").innerText);
-  const restartGame = document.getElementById("restart");*/
  
  /**
   * Add event listeners and get player selection.
@@ -101,18 +99,13 @@
   * 
   */
  function gameFinished(roundsLeft) {
-   roundsLeft = parseInt(document.getElementById("rounds-left").innerText);/*
-   pScore = parseInt(document.getElementById("player-score").innerText);
-   cScore = parseInt(document.getElementById("computer-score").innerText); */
+   roundsLeft = parseInt(document.getElementById("rounds-left").innerText);
+   
    if (roundsLeft === 0) {
     restartBtn.style.display = 'inline-block';
     document.getElementById("player-prompt").innerText = "Click restart to start a new game";
     document.getElementById("choice-area").style.display = 'none';
-    /* console.log(selections); 
-    for (let selection of selections) {
-       selection.removeEventListener("click", playGame());
-     } */
-     const icons = document.querySelectorAll('.selection');
+    const icons = document.querySelectorAll('.selection');
  icons.forEach(function (icon) {
        icon.style.pointerEvents = "none";
     }); 
